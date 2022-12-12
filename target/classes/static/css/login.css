@@ -1,0 +1,62 @@
+:root {
+  --color1: #30d5c8;
+  --color2: #fffdd0;
+}
+* {
+  margin: 0;
+}
+body {
+  background: rgb(84, 255, 159);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(84, 255, 159, 1) 0%,
+    rgba(190, 245, 116, 1) 52%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(84, 255, 159, 1) 0%,
+    rgba(190, 245, 116, 1) 52%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(84, 255, 159, 1) 0%,
+    rgba(190, 245, 116, 1) 52%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#54ff9f",endColorstr="#bef574",GradientType=1);
+  background-size: contain;
+}
+
+header,
+footer,
+section {
+  padding: 20px 0;
+  
+}
+
+header,
+footer {
+  background: rgb(121, 185, 171);
+  background: -moz-linear-gradient(90deg, var(--color1) 17%, var(--color2) 70%);
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--color1) 17%,
+    var(--color2) 70%
+  );
+  background: linear-gradient(90deg, var(--color1) 17%, var(--color2) 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1),endColorstr=var(--color2),GradientType=1);
+  background-size: contain;
+}
+
+.btn-reg {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 30px;
+  color: var(--bs-white);
+  background-color: var(--color1);
+}
+
+.btn-reg:hover {
+  color: var(--bs-width);
+  background-color: var(--color2);
+}
